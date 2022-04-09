@@ -24,7 +24,7 @@ const SearchButton = (props) => {
 
   return (
     <div>
-      <button className={styles.searchBar} type='button' onClick={() => setModalIsOpen(true)}> 
+      <button className={styles.searchBar} type='button' onClick={() => setModalIsOpen(true)}>
       &nbsp;&nbsp;&nbsp; 주소를 입력해 주세요 <BsSearch className={styles.bsSearch}/> </button>
       <Modal isOpen={modalIsOpen} onRequestClose={() => initialize()}
         style= {{
@@ -48,12 +48,12 @@ const SearchButton = (props) => {
         <div className={styles.searchDiv}>
           <input className={styles.searchBar} id='searchAddress'
             style={{
-              width: '100%', 
-              top: '-30px', 
-              padding: '15px', 
+              width: '100%',
+              top: '-30px',
+              padding: '15px',
               paddingRight: '45px'
-            }} 
-            type='text' placeholder='주소를 입력해 주세요'/>
+            }}
+            type='text' placeholder='주소를 입력해 주세요;'/>
           <BsSearch style={{
             position: 'absolute',
             top: '32px',
@@ -65,7 +65,7 @@ const SearchButton = (props) => {
         {searchClicked &&
           address
         }
-        {!searchClicked && 
+        {!searchClicked &&
           <>
             <div className={styles.searchH2}>검색 Tip</div>
             <div className={styles.searchH3}>• 도로명 + 건물번호</div>
