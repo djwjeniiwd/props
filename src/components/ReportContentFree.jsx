@@ -149,8 +149,8 @@ const ReportContent = (props) => {
       <div className={styles.detailBox}>
         <div className={styles.detailTitle} style={{fontSize: '1.250em'}}>우리 집 등기부등본 발급 받고<br/>부동산 전문가의 분석 받기</div>
         <div className={styles.summaryMents} style={{
-          marginTop: '20px',
-          fontSize: '12px'
+          marginTop: '1.250em',
+          fontSize: '0.750em'
           }}>등기부등본과 건축물대장을 바탕으로<br/>약 52가지 위험사항을 점검해요!</div>
         <Mini className={styles.detailIcon}/>
         <Hand className={styles.detailIcon}/>
@@ -164,7 +164,7 @@ const ReportContent = (props) => {
           color: 'white',
           backgroundColor: '#1381FF',
           border: '1px solid lightgray',
-          borderRadius: '20px',
+          borderRadius: '1.250em',
           borderColor: 'transparent'
         }}
         onClick={() => kakaoChannelButtonClicked()}
@@ -186,7 +186,7 @@ const ReportContent = (props) => {
           color: '#1381FF',
           backgroundColor: 'white',
           border: '1px solid lightgray',
-          borderRadius: '20px',
+          borderRadius: '1.250em',
           borderColor: 'transparent'
         }}
         onClick={() => requestButtonClicked()}
