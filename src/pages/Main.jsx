@@ -63,11 +63,12 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 32px;
+  margin: 0 2.000em;
 `;
 
 const LoginButtonContainer = styled.div`
-  height: 114px;
+  height: 1
+  ;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -75,31 +76,31 @@ const LoginButtonContainer = styled.div`
 
 const LoginBtn = styled.button`
   width: 100%;
-  height: 45px;
+  height: 2.813em;
   display: flex;
   justify-content: center;
   align-items: center;
   color: ${(props) => (props.provider === "Kakao" ? "##191919" : "#ffffff")};
-  line-height: 21px;
-  font-size: 14px;
+  line-height: 1.313em;
+  font-size: 0.875em;
   font-weight: 500;
   background-color: ${(props) =>
     props.provider === "Kakao" ? "#fee500" : "#03C75A"};
   text-decoration: none;
-  border-radius: 25px;
+  border-radius: 1.563em;
   border: none;
   position: relative;
 `;
 
 const NaverLogo = styled.img`
-  width: 15.5px;
-  height: 15.4px;
+  width: 0.969em;
+  height: 0.963em;
   position: absolute;
-  left: 17.6px;
+  left: 1.100em;
 `;
 const KakaoLogo = styled.img`
-  width: 19.5px;
-  height: 17.9px;
+  width: 1.219em;
+  height: 1.119em;
   position: absolute;
-  left: 15.6px;
+  left: 0.975em;
 `;

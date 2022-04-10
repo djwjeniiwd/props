@@ -13,7 +13,7 @@ const ReportSumHighlights = (props) => {
     eulguDangerList: [],
     kapguDangerList: [],
   })
-  
+
   const million = 100000000
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const ReportSumHighlights = (props) => {
 
   return (
     <div className={styles.summaryBox}>
-      <div className={styles.summaryTitle} style={{marginBottom: '15px'}}>주요사항 요약</div>
+      <div className={styles.summaryTitle} style={{marginBottom: '0.938em'}}>주요사항 요약</div>
       {data &&
         <div>
           {data.joint &&

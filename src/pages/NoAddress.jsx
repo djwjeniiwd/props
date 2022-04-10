@@ -12,14 +12,14 @@ const NoAddress = () => {
     <Layout>
       <Link to='/search'>
         <div style={{ display: 'flex' }}>
-          <img src={Previous} alt='Previous button' 
-            style={{ marginLeft: '32px', marginTop: '35px', flex: '1' }}
+          <img src={Previous} alt='Previous button'
+            style={{ marginLeft: '2.000em', marginTop: '2.188em', flex: '1' }}
           />
           <div style={{ flex: '100' }}></div>
         </div>
       </Link>
-      <div className={styles.subTitleText} style={{ marginTop: '80px' }}>주소가 안나와요!</div>
-      <div className={styles.box} style={{ marginTop: '80px', marginBottom: '110px' }}>
+      <div className={styles.subTitleText} style={{ marginTop: '5.000em' }}>주소가 안나와요!</div>
+      <div className={styles.box} style={{ marginTop: '5.000em', marginBottom: '6.875em' }}>
         <ul>
           <li className={styles.commonText}> 오타가 있는지 확인해보세요. </li>
           <li className={styles.commonText}> 도로명주소로 조회되지 않는 경우 지번주소를 입력해보세요. </li>

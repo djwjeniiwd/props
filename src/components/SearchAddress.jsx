@@ -20,7 +20,7 @@ const SearchAddress = (props) => {
   const [data, setData] = useState([]);
 
   const overlayMargin =
-    window.innerHeight > 812 ? (window.innerHeight - 812) / 2 : "0px";
+    window.innerHeight > 812 ? (window.innerHeight - 812) / 2 : "0em";
 
   // When modal closed, call function initialize()
   const initialize = () => {
@@ -45,7 +45,7 @@ const SearchAddress = (props) => {
 
   const search = async (keyword) => {
     searchData = [];
-    
+
     await axios
       .get(
         `${String(
@@ -115,20 +115,20 @@ const SearchAddress = (props) => {
         style={{
           overlay: {
             position: "fixed",
-            width: "375px",
-            height: "812px",
+            width: "23.438em",
+            height: "50.750em",
             margin: "0 auto",
             marginTop: overlayMargin,
             backgroundColor: "rgba(0, 0, 0, 0.75)",
           },
           content: {
-            width: "375px",
-            marginTop: "88px",
-            marginLeft: "-40px",
-            marginBottom: "-40px",
+            width: "23.438em",
+            marginTop: "5.500em",
+            marginLeft: "-2.500em",
+            marginBottom: "-2.500em",
             //paddingTop: '42px',
             //textAlign: 'center',
-            borderRadius: "40px 40px 0px 0px",
+            borderRadius: "2.500em 2.500em 0em 0em",
           },
         }}
         onAfterOpen={disableScroll}
@@ -140,8 +140,8 @@ const SearchAddress = (props) => {
             id="searchAddress"
             style={{
               width: "100%",
-              top: "-30px",
-              paddingRight: "45px",
+              top: "-1.875em",
+              paddingRight: "2.813em",
             }}
             type="text"
             placeholder="주소를 입력해 주세요"
@@ -150,8 +150,8 @@ const SearchAddress = (props) => {
           <BsSearch
             style={{
               position: "absolute",
-              top: "32px",
-              right: "18px",
+              top: "2.000em",
+              right: "1.125em",
             }}
             // search button clicked, call function checkAddress(value)
             onClick={() =>
@@ -197,10 +197,10 @@ const SearchAddress = (props) => {
                         style={{
                           margin: "auto",
                           display: "block",
-                          width: "110px",
+                          width: "6.875em",
                           fontWeight: "600",
-                          border: "1px solid lightgray",
-                          borderRadius: "20px",
+                          border: "0.063em solid lightgray",
+                          borderRadius: "1.250em",
                         }}
                       >
                         다음
@@ -230,9 +230,9 @@ const SearchAddress = (props) => {
                   <div
                     className={styles.box}
                     style={{
-                      marginTop: "50px",
+                      marginTop: "3.125em",
                       width: "95%",
-                      height: "350px",
+                      height: "21.875em",
                       borderRadius: "7%",
                     }}
                   >

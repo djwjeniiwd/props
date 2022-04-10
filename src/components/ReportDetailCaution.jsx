@@ -7,7 +7,7 @@ const ReportDetailCaution = () => {
   return(
     <div>
       <StatusBar/>
-      <div style={{display: 'flex', marginBottom: '20px'}}>
+      <div style={{display: 'flex', marginBottom: '1.250em'}}>
         <div style={{fontWeight: '600', color: '#BDBDBD', flex: '1'}}>양호</div>
         <div style={{fontWeight: '600', color: '#F6953C', flex: '2.7'}}>주의</div>
         <div style={{fontWeight: '600', color: '#BDBDBD', flex: '1'}}>위험</div>

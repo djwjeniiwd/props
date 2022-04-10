@@ -30,18 +30,18 @@ const SearchButton = (props) => {
         style= {{
           overlay: {
             position: 'fixed',
-            width: '375px',
+            width: '23.438em',
             margin: '0 auto',
             backgroundColor: 'rgba(0, 0, 0, 0.75)'
           },
           content: {
-            width: '375px',
-            marginTop: '88px',
-            marginLeft: '-40px',
-            marginBottom: '-40px',
+            width: '23.438em',
+            marginTop: '5.500em',
+            marginLeft: '-2.500em',
+            marginBottom: '-2.500em',
             //paddingTop: '42px',
             //textAlign: 'center',
-            borderRadius: '40px 40px 0px 0px'
+            borderRadius: '2.500em 2.500em 0em 0em'
           }
         }}
       >
@@ -49,15 +49,15 @@ const SearchButton = (props) => {
           <input className={styles.searchBar} id='searchAddress'
             style={{
               width: '100%',
-              top: '-30px',
-              padding: '15px',
-              paddingRight: '45px'
+              top: '-1.875em',
+              padding: '0.937',
+              paddingRight: '2.813em'
             }}
             type='text' placeholder='주소를 입력해 주세요;'/>
           <BsSearch style={{
             position: 'absolute',
-            top: '32px',
-            right: '18px',
+            top: '2.000em',
+            right: '1.125em',
             }}
             onClick= {() => checkAddress(document.getElementById('searchAddress').value)}
           />

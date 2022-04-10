@@ -30,12 +30,12 @@ const Report = (props) => {
       <Link to='/search'>
         <div style={{ display: 'flex' }}>
           <img src={Previous} alt='Previous button'
-            style={{ marginLeft: '32px', marginTop: '35px', flex: '1' }}
+            style={{ marginLeft: '2.000em', marginTop: '2.188em', flex: '1' }}
           />
           <div style={{ flex: '100' }}></div>
         </div>
       </Link>
-      <div style={{fontWeight: '600', marginBottom: '6px'}}>리포트</div>
+      <div style={{fontWeight: '600', marginBottom: '0.375em'}}>리포트</div>
 
       <ul className={`${
         reportState === 'Safe' ? styles.reportTabSafe :
@@ -50,12 +50,12 @@ const Report = (props) => {
         {contents[tabState]}
       </div>
 
-      {tabState === 0 && 
+      {tabState === 0 &&
         <>
-          <div className={styles.summaryDetails} style={{marginTop: '60px'}}>
-            <div style={{marginLeft: '20px'}} onClick={() => setTabState(1)}>더 자세히 알고싶어요! <img className={styles.summaryNext} src={NextWarn} alt='Next button'/> </div>
+          <div className={styles.summaryDetails} style={{marginTop: '3.750em'}}>
+            <div style={{marginLeft: '1.250em'}} onClick={() => setTabState(1)}>더 자세히 알고싶어요! <img className={styles.summaryNext} src={NextWarn} alt='Next button'/> </div>
           </div>
-          <div className={styles.summaryMents} style={{marginTop: '30px'}}>
+          <div className={styles.summaryMents} style={{marginTop: '1.875em'}}>
             <div>해당 리포트는 AI가 부동산 공부(公簿)의 사실관계를 나열한 것으로</div>
             <div>법률자문을 포함하고 있지 않습니다.</div>
           </div>

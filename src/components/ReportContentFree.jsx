@@ -174,7 +174,7 @@ const ReportContent = (props) => {
         권리의 득실·변경이나 충돌 여부, 우열관계 등의 분석을 제공하고 있지 않기 때문에 복잡한 권리 관계가 얽힌 경우 ‘일반 법률사무’를 제공하는 전문가(변호사)에게 조언을 구해야 합니다.<br/><br/>
         계약 선택에 대한 책임은 계약자 본인에게 있습니다.
       </div>
-      <div className={styles.summaryMents} style={{marginTop: '6em', color: '#1381FF', marginBottom: '1px'}}>요청 글 남기기</div>
+      <div className={styles.summaryMents} style={{marginTop: '10em', color: '#1381FF', marginBottom: '2em'}}>요청 글 남기기</div>
       <button type='button' className='btn btn-outline-quaternary'
         style={{
           margin: 'auto',

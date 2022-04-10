@@ -15,7 +15,7 @@ const CheckRental = props => {
   const [ num, setNum ] = useState('')
 
   const [ address, setAddress ] = useState()
-  
+
   // const [ complexType, setComplexType ] = useState()
   // const [ detailAddress, setDetailAddress ] = useState()
   // const [ landCode, setLandCode ] = useState()
@@ -24,7 +24,7 @@ const CheckRental = props => {
 
   const { state } = useLocation()
 
-  const overlayMargin = (window.innerHeight>812 ? ((window.innerHeight - 812) / 2) : '0px')
+  const overlayMargin = (window.innerHeight>812 ? ((window.innerHeight - 812) / 2) : '0em')
 
   const question = [
     {
@@ -134,12 +134,12 @@ const CheckRental = props => {
             onClick={() => buttonClicked(3)}>매매</button>
         </ul>
 
-        
-        <div style={{ 
-          position: 'absolute', 
-          display: 'flex', 
-          width: '375px',
-          top: '700px',
+
+        <div style={{
+          position: 'absolute',
+          display: 'flex',
+          width: '23.438em',
+          top: '43.750em',
           padding: '6%'
           }}>
           <Link to='/search' style={{ textDecoration:'none', flex: '1' }}>
@@ -149,8 +149,8 @@ const CheckRental = props => {
                 display: 'block',
                 width: '100%',
                 fontWeight: '600',
-                border: '1px solid lightgray',
-                borderRadius: '20px'
+                border: '0.063em solid lightgray',
+                borderRadius: '1.250em'
               }}
             >이전</button>
           </Link>
@@ -162,8 +162,8 @@ const CheckRental = props => {
                 display: 'block',
                 width: '100%',
                 fontWeight: '600',
-                border: '1px solid lightgray',
-                borderRadius: '20px'
+                border: '0.063em solid lightgray',
+                borderRadius: '1.250em'
               }}
               onClick={() => nextClicked(1)}
             >다음</button>
@@ -176,8 +176,8 @@ const CheckRental = props => {
         <>
           <input className={styles.inputGuarantee}
             id='guaranteeInput'
-            type='text' 
-            placeholder='보증금액을 입력해주세요 (숫자)' 
+            type='text'
+            placeholder='보증금액을 입력해주세요 (숫자)'
             value={num}
             onChange={(e) => setNum(inputPriceFormat(e.target.value))}
           />
@@ -192,8 +192,8 @@ const CheckRental = props => {
               fontWeight: '600',
               color: 'white',
               backgroundColor: '#1381FF',
-              border: '1px solid lightgray',
-              borderRadius: '20px',
+              border: '0.063em solid lightgray',
+              borderRadius: '1.250em',
               borderColor: 'transparent'
             }}
             onClick={() => safetyButtonClicked()}
@@ -202,39 +202,39 @@ const CheckRental = props => {
             style={{
               overlay: {
                 position: 'fixed',
-                width: '375px',
-                height: '812px',
+                width: '23.438em',
+                height: '50.750em',
                 margin: '0 auto',
                 marginTop: overlayMargin,
                 backgroundColor: 'rgba(0, 0, 0, 0.85)'
               },
               content: {
                 position: 'absolute',
-                width: '293px',
-                height: '309px',
-                left: '41px', // (overlay width - content width) / 2
-                top: '251.5px', // (overlay height - content height) / 2
-                borderRadius: '20px',
-                paddingLeft: '32px',
-                paddingRight: '32px',
-                paddingTop: '30px',
-                paddingBottom: '30px'
+                width: '18.313em',
+                height: '19.313em',
+                left: '2.563em', // (overlay width - content width) / 2
+                top: '15.719em', // (overlay height - content height) / 2
+                borderRadius: '1.250em',
+                paddingLeft: '2.000em',
+                paddingRight: '2.000em',
+                paddingTop: '1.875em',
+                paddingBottom: '1.875em'
               }
             }}
           >
             <div style={{fontSize: '1.1em', fontWeight: '700', textAlign: 'center'}}>4,900원 결제하기</div>
-            <div style={{fontSize: '0.8em', fontWeight: '700', textAlign: 'center', marginTop: '23px'}}>{address.detailAddress}</div>
+            <div style={{fontSize: '0.8em', fontWeight: '700', textAlign: 'center', marginTop: '1.438em'}}>{address.detailAddress}</div>
             <div style={{fontSize: '0.8em', fontWeight: '700', textAlign: 'center'}}>[{address.landCode}]</div>
-            <div style={{fontSize: '0.8em', fontWeight: '700', textAlign: 'center', marginTop: '18px'}}>주소로 확인하시겠습니까?</div>
-            <div style={{display: 'flex', marginTop: '15px'}}>
+            <div style={{fontSize: '0.8em', fontWeight: '700', textAlign: 'center', marginTop: '1.125em'}}>주소로 확인하시겠습니까?</div>
+            <div style={{display: 'flex', marginTop: '0.938em'}}>
               <a href='#!' style={{textDecoration:'none', flex: '1'}}>
               <button type='button' className='btn btn-outline-primary'
                 style={{
-                  height: '30px',
+                  height: '1.875em',
                   fontWeight: '500',
-                  borderRadius: '20px',
+                  borderRadius: '1.250em',
                   width: '100%',
-                  fontSize: '12px',
+                  fontSize: '0.750em',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center'
@@ -248,10 +248,10 @@ const CheckRental = props => {
                 style={{ textDecoration:'none', flex: '1' }}>
                 <button type='button' className='btn btn-primary'
                   style={{
-                    height: '30px',
+                    height: '1.875em',
                     fontWeight: '500',
-                    borderRadius: '20px',
-                    fontSize: '12px',
+                    borderRadius: '1.250em',
+                    fontSize: '1.250em',
                     width: '100%',
                     display: 'flex',
                     alignItems: 'center',
@@ -260,7 +260,7 @@ const CheckRental = props => {
                 >동의 및 결제</button>
               </Link>
             </div>
-            <div className={styles.tips} style={{marginTop: '25px'}}>
+            <div className={styles.tips} style={{marginTop: '1.563em'}}>
               결제 금액은 등기부 등본, 건축물 대장
             </div>
             <div className={styles.tips}>
@@ -272,11 +272,11 @@ const CheckRental = props => {
 
       {(questionNumber === 1) && (clickedIndex === 3) &&  // 매매 클릭 후 다음 버튼을 눌렀을 때
         <>
-          <ServicePreparing style={{marginTop: '140px'}}/>
-          <div style={{marginTop: '55px', fontSize: '1.4em', fontWeight: '700'}}>서비스 준비중이에요!</div>
-          <div style={{marginTop: '45px', fontSize: '0.8em', fontWeight: '600', color: 'gray'}}>현재는 주택 임대차 안전도 분석만 제공하고 있습니다.</div>
+          <ServicePreparing style={{marginTop: '8.750em'}}/>
+          <div style={{marginTop: '3.438em', fontSize: '1.4em', fontWeight: '700'}}>서비스 준비중이에요!</div>
+          <div style={{marginTop: '2.813em', fontSize: '0.8em', fontWeight: '600', color: 'gray'}}>현재는 주택 임대차 안전도 분석만 제공하고 있습니다.</div>
           <div style={{fontSize: '0.8em', fontWeight: '600', color: 'gray'}}>매매 서비스도 열심히 준비중이니 조금만 기다려주세요!</div>
-          <div style={{marginTop: '25px', fontSize: '0.8em', fontWeight: '600', color: 'gray'}}>감사합니다.</div>
+          <div style={{marginTop: '1.563em', fontSize: '0.8em', fontWeight: '600', color: 'gray'}}>감사합니다.</div>
         </>
       }
     </Layout>

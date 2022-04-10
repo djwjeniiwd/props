@@ -12,50 +12,50 @@ import { ReactComponent as MenuIcon } from '../assets/menuIcon.svg'
 const Header = () => {
   const [ modalIsOpen, setModalIsOpen ] = useState(false);
 
-  const overlayMargin = (window.innerHeight>812 ? ((window.innerHeight - 812) / 2) : '0px')
+  const overlayMargin = (window.innerHeight>812 ? ((window.innerHeight - 812) / 2) : '0em')
 
   return (
     <header className={styles.header}>
       <div className={styles.contents}>
         <button className={logoStyles.buttonLogo} type='button'
-         onClick={() => window.location.replace('/search')}> 
-          <Link to='/search'> <img src={Logo} alt='propsLogo'/> </Link> 
+         onClick={() => window.location.replace('/search')}>
+          <Link to='/search'> <img src={Logo} alt='propsLogo'/> </Link>
         </button>
         {/* <MenuIcon onClick={() => setModalIsOpen(true)}/> */}
         <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}
           style= {{
             overlay: {
               position: 'fixed',
-              width: '375px',
-              height: '812px',
+              width: '23.438em',
+              height: '50.750em',
               margin: '0 auto',
               marginTop: overlayMargin,
               backgroundColor: 'rgba(0, 0, 0, 0.75)'
             },
             content: {
-              width: '375px',
-              height: '265px',
-              marginTop: '-40px',
-              marginLeft: '-40px',
+              width: '23.438em',
+              height: '16.563em',
+              marginTop: '-2.500em',
+              marginLeft: '-2.500em',
               borderRadius: '0 0 0 0',
               padding: '0'
             }
           }}
         >
           <>
-            <button className={logoStyles.buttonLogo} type='button' 
+            <button className={logoStyles.buttonLogo} type='button'
               style={{
-                margin: '25px', 
-                paddingTop: '2.5px',
+                margin: '1.563em',
+                paddingTop: '0.156em',
                 float: 'left',
-                marginBottom: '25px'
+                marginBottom: '1.563em'
               }}
-            > 
-              <Link to='/main'> 
+            >
+              <Link to='/main'>
                 <img src={Logo} alt='propsLogo'/> 
-              </Link> 
+              </Link>
             </button>
-            <GrClose style={{ position: 'absolute', top:'32px', right: '32px' }}
+            <GrClose style={{ position: 'absolute', top:'2.000em', right: '2.000em' }}
               onClick={() => { setModalIsOpen(false) }}></GrClose>
           </>
           <div className={logoStyles.menuBox} >로그인 / 회원가입</div>

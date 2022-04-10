@@ -19,7 +19,7 @@ const CheckRentalFree = props => {
   })
 
   const [ address, setAddress ] = useState()
-  
+
   // const [ complexType, setComplexType ] = useState()
   // const [ detailAddress, setDetailAddress ] = useState()
   // const [ landCode, setLandCode ] = useState()
@@ -28,7 +28,7 @@ const CheckRentalFree = props => {
 
   const { state } = useLocation()
 
-  const overlayMargin = (window.innerHeight>812 ? ((window.innerHeight - 812) / 2) : '0px')
+  const overlayMargin = (window.innerHeight>812 ? ((window.innerHeight - 812) / 2) : '0em')
 
   const question = [
     {
@@ -124,7 +124,7 @@ const CheckRentalFree = props => {
       setTrans({
         ...trans,
         transAmount: (resstr === '') ? '0' : resstr
-      }) 
+      })
       return resstr
     }
     return comma(uncomma(str))
@@ -165,8 +165,8 @@ const CheckRentalFree = props => {
               display: 'block',
               width: '35%',
               fontWeight: '600',
-              border: '1px solid lightgray',
-              borderRadius: '20px'
+              border: '0.063em solid lightgray',
+              borderRadius: '1.250em'
             }}
           >이전</button>
         </Link>
@@ -180,8 +180,8 @@ const CheckRentalFree = props => {
               display: 'block',
               width: '35%',
               fontWeight: '600',
-              border: '1px solid lightgray',
-              borderRadius: '20px'
+              border: '0.063em solid lightgray',
+              borderRadius: '1.250em'
             }}
             onClick={() => nextClicked(1)}
           >다음</button>
@@ -193,8 +193,8 @@ const CheckRentalFree = props => {
         <>
           <input className={styles.inputGuarantee}
             id='guaranteeInput'
-            type='text' 
-            placeholder='보증금액을 입력해주세요 (숫자)' 
+            type='text'
+            placeholder='보증금액을 입력해주세요 (숫자)'
             value={num}
             onChange={(e) => setNum(inputPriceFormat(e.target.value))}
           />
@@ -210,8 +210,8 @@ const CheckRentalFree = props => {
                   fontWeight: '600',
                   color: 'white',
                   backgroundColor: '#1381FF',
-                  border: '1px solid lightgray',
-                  borderRadius: '20px',
+                  border: '0.063em solid lightgray',
+                  borderRadius: '1.250em',
                   borderColor: 'transparent'
                 }}
                 onClick={() => safetyButtonClicked()}
@@ -222,11 +222,11 @@ const CheckRentalFree = props => {
 
       {(questionNumber === 1) && (clickedIndex === 3) &&  // 매매 클릭 후 다음 버튼을 눌렀을 때
         <>
-          <ServicePreparing style={{marginTop: '140px'}}/>
-          <div style={{marginTop: '55px', fontSize: '1.4em', fontWeight: '700'}}>서비스 준비중이에요!</div>
-          <div style={{marginTop: '45px', fontSize: '0.8em', fontWeight: '600', color: 'gray'}}>현재는 주택 임대차 안전도 분석만 제공하고 있습니다.</div>
+          <ServicePreparing style={{marginTop: '8.750em'}}/>
+          <div style={{marginTop: '3.438em', fontSize: '1.4em', fontWeight: '700'}}>서비스 준비중이에요!</div>
+          <div style={{marginTop: '2.813em', fontSize: '0.8em', fontWeight: '600', color: 'gray'}}>현재는 주택 임대차 안전도 분석만 제공하고 있습니다.</div>
           <div style={{fontSize: '0.8em', fontWeight: '600', color: 'gray'}}>매매 서비스도 열심히 준비중이니 조금만 기다려주세요!</div>
-          <div style={{marginTop: '25px', fontSize: '0.8em', fontWeight: '600', color: 'gray'}}>감사합니다.</div>
+          <div style={{marginTop: '1.563em', fontSize: '0.8em', fontWeight: '600', color: 'gray'}}>감사합니다.</div>
         </>
       }
     </Layout>

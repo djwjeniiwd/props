@@ -24,16 +24,16 @@ const ReportContent = (props) => {
 
   return (
     <div>
-      <div style={{height: '35px'}}></div>
+      <div style={{height: '2.188em'}}></div>
       <div className={styles.detailBox}>
         <div className={styles.summaryTitle}>우리 집 리포트</div>
-        
+
         {data.joint &&  // 세부리포트 1 - 공동담보
           <>
             <div className={styles.detailTitle}>공동담보로 빚이 <span style={{color: '#FF5A56'}}>약 {data.mortgage/million}억</span> 있습니다.</div>
             <Seesaw className={styles.detailIcon}/>
             <div className={styles.detailSubTitleBox}>집주인이 다른 집과 같이 대출 받았어요</div>
-            <p className={styles.detailText}> 
+            <p className={styles.detailText}>
               현재 공동담보로 약 {data.mortgage/million}억원의 빚이 있어요. <br/><br/>
               공동담보란 쉽게 말해 집주인이 큰 액수의 빚을 대출받기 위해 다른 집을 같이 담보로 묶어 대출받은 것을 말해요. <br/><br/>
               공동담보로 설정된 빚의 경우 등기부등본만으로는 위험도를 판단하기 어렵기 때문에 전문가와의 상담이 필요해요. <br/><br/>
@@ -42,8 +42,8 @@ const ReportContent = (props) => {
               따라서 공인중개사분께 해당 내역을 알 수 있는 ‘공동담보목록’을 보여달라고 요청하신 후 계약하고자 하는 호수로는 빚이 얼마 정도인지 물어보셔서 아래 식으로 안전한지 계산해 보시길 권고 드려요.
             </p>
             <div className={styles.detailRiskCalculator}>
-              <div style={{fontSize: '14px', fontWeight: 700}}>위험도 계산식</div>
-              <span style={{background: 'linear-gradient(to top, #FFCDC9 30%, transparent 50%)', fontSize: '13px', fontWeight: 700}}>
+              <div style={{fontSize: '0.875em', fontWeight: 700}}>위험도 계산식</div>
+              <span style={{background: 'linear-gradient(to top, #FFCDC9 30%, transparent 50%)', fontSize: '0.813em', fontWeight: 700}}>
                 보증금 + 빚 〈 <span style={{textDecoration: 'underline'}}>예상거래가격</span> × 0.7
               </span>
             </div>
@@ -69,14 +69,14 @@ const ReportContent = (props) => {
                 <div className={styles.detailTitle}>빚이 <span style={{color: '#FF5A56'}}>약 {data.mortgage/million}억</span> 있습니다.</div>
                 <Seesaw className={styles.detailIcon}/>
                 <div className={styles.detailSubTitleBox}>빚이 많은 편이에요!</div>
-                <p className={styles.detailText}> 
+                <p className={styles.detailText}>
                   이 집을 담보로 빚이 많은 편이라 주의가 필요해요! <br/><br/>
                   현재 등기부등본상 빚이 약 {data.mortgage/million}억 정도 있는데 예상 최소 가격 대비 nn% 정도예요!  <br/><br/>
                   등기부등본에 적혀있는 빚 외에도 선순위보증금(다른 세입자들 보증금의 합)을 공인중개사나 집주인에게 물어보신 후 계산해 보셔야 해요! <br/><br/>
                 </p>
                 <div className={styles.detailRiskCalculator}>
-                  <div style={{fontSize: '14px', fontWeight: 700}}>위험도 계산식</div>
-                  <span style={{background: 'linear-gradient(to top, #FFCDC9 30%, transparent 50%)', fontSize: '13px', fontWeight: 700}}>
+                  <div style={{fontSize: '0.875em', fontWeight: 700}}>위험도 계산식</div>
+                  <span style={{background: 'linear-gradient(to top, #FFCDC9 30%, transparent 50%)', fontSize: '0.813em', fontWeight: 700}}>
                     보증금 + 빚 〈 <span style={{textDecoration: 'underline'}}>예상거래가격</span> × 0.7
                   </span>
                 </div>
@@ -103,13 +103,13 @@ const ReportContent = (props) => {
                 <div className={styles.detailTitle}>빚이 <span style={{color: '#FF5A56'}}>약 {data.mortgage/million}억</span> 있습니다.</div>
                 <Seesaw className={styles.detailIcon}/>
                 <div className={styles.detailSubTitleBox}>빚이 많은 편이에요!</div>
-                <p className={styles.detailText}> 
+                <p className={styles.detailText}>
                   이 집을 담보로 빚이 많은 편이라 주의가 필요해요! <br/><br/>
                   현재 등기부등본상 빚이 약 {data.mortgage/million}억 정도 있는데 예상 최소 가격 대비 nn% 정도예요!  <br/><br/>
                 </p>
                 <div className={styles.detailRiskCalculator}>
-                  <div style={{fontSize: '14px', fontWeight: 700}}>위험도 계산식</div>
-                  <span style={{background: 'linear-gradient(to top, #FFCDC9 30%, transparent 50%)', fontSize: '13px', fontWeight: 700}}>
+                  <div style={{fontSize: '0.875em', fontWeight: 700}}>위험도 계산식</div>
+                  <span style={{background: 'linear-gradient(to top, #FFCDC9 30%, transparent 50%)', fontSize: '0.813em', fontWeight: 700}}>
                     보증금 + 빚 〈 <span style={{textDecoration: 'underline'}}>예상거래가격</span> × 0.7
                   </span>
                 </div>
@@ -125,14 +125,14 @@ const ReportContent = (props) => {
                 <div className={styles.detailTitle}>빚이 <span style={{color: '#FF5A56'}}>약 {data.mortgage/million}억</span> 있습니다.</div>
                 <Seesaw className={styles.detailIcon}/>
                 <div className={styles.detailSubTitleBox}>빚이 많은 편은 아니에요!</div>
-                <p className={styles.detailText}> 
+                <p className={styles.detailText}>
                   이 집을 담보로 빚이 많은 편은 아니지만 주의가 필요해요! <br/><br/>
                   현재 등기부등본상 빚이 약 {data.mortgage/million}억 정도 있는데 예상 최소 가격 대비 nn% 정도예요!  <br/><br/>
                   등기부등본에 적혀있는 빚 외에도 선순위보증금(다른 세입자들 보증금의 합)을 공인중개사나 집주인에게 물어보신 후 계산해 보셔야 해요! <br/><br/>
                 </p>
                 <div className={styles.detailRiskCalculator}>
-                  <div style={{fontSize: '14px', fontWeight: 700}}>위험도 계산식</div>
-                  <span style={{background: 'linear-gradient(to top, #FFCDC9 30%, transparent 50%)', fontSize: '13px', fontWeight: 700}}>
+                  <div style={{fontSize: '0.875em', fontWeight: 700}}>위험도 계산식</div>
+                  <span style={{background: 'linear-gradient(to top, #FFCDC9 30%, transparent 50%)', fontSize: '0.813em', fontWeight: 700}}>
                     보증금 + 빚 〈 <span style={{textDecoration: 'underline'}}>예상거래가격</span> × 0.7
                   </span>
                 </div>
@@ -154,13 +154,13 @@ const ReportContent = (props) => {
                 <div className={styles.detailTitle}>빚이 <span style={{color: '#FF5A56'}}>약 {data.mortgage/million}억</span> 있습니다.</div>
                 <Seesaw className={styles.detailIcon}/>
                 <div className={styles.detailSubTitleBox}>빚이 많은 편은 아니에요!</div>
-                <p className={styles.detailText}> 
+                <p className={styles.detailText}>
                   이 집을 담보로 빚이 많은 편은 아니지만 주의가 필요해요! <br/><br/>
                   현재 등기부등본상 빚이 약 {data.mortgage/million}억 정도 있는데 예상 최소 가격 대비 nn% 정도예요!  <br/><br/>
                 </p>
                 <div className={styles.detailRiskCalculator}>
-                  <div style={{fontSize: '14px', fontWeight: 700}}>위험도 계산식</div>
-                  <span style={{background: 'linear-gradient(to top, #FFCDC9 30%, transparent 50%)', fontSize: '13px', fontWeight: 700}}>
+                  <div style={{fontSize: '0.875em', fontWeight: 700}}>위험도 계산식</div>
+                  <span style={{background: 'linear-gradient(to top, #FFCDC9 30%, transparent 50%)', fontSize: '0.813em', fontWeight: 700}}>
                     보증금 + 빚 〈 <span style={{textDecoration: 'underline'}}>예상거래가격</span> × 0.7
                   </span>
                 </div>
@@ -176,14 +176,14 @@ const ReportContent = (props) => {
                 <div className={styles.detailTitle}>빚이 <span style={{color: '#FF5A56'}}>약 {data.mortgage/million}억</span> 있습니다.</div>
                 <Seesaw className={styles.detailIcon}/>
                 <div className={styles.detailSubTitleBox}>빚이 조금 있는 편이에요!</div>
-                <p className={styles.detailText}> 
+                <p className={styles.detailText}>
                   이 집을 담보로 빚이 조금 있는 편이라 주의가 필요해요! <br/><br/>
                   현재 등기부등본상 빚이 약 {data.mortgage/million}억 정도 있는데 예상 최소 가격 대비 nn% 정도예요!  <br/><br/>
                   등기부등본에 적혀있는 빚 외에도 선순위보증금(다른 세입자들 보증금의 합)을 공인중개사나 집주인에게 물어보신 후 계산해 보셔야 해요! <br/><br/>
                 </p>
                 <div className={styles.detailRiskCalculator}>
-                  <div style={{fontSize: '14px', fontWeight: 700}}>위험도 계산식</div>
-                  <span style={{background: 'linear-gradient(to top, #FFCDC9 30%, transparent 50%)', fontSize: '13px', fontWeight: 700}}>
+                  <div style={{fontSize: '0.875em', fontWeight: 700}}>위험도 계산식</div>
+                  <span style={{background: 'linear-gradient(to top, #FFCDC9 30%, transparent 50%)', fontSize: '0.813em', fontWeight: 700}}>
                     보증금 + 빚 〈 <span style={{textDecoration: 'underline'}}>예상거래가격</span> × 0.7
                   </span>
                 </div>
@@ -205,13 +205,13 @@ const ReportContent = (props) => {
                 <div className={styles.detailTitle}>빚이 <span style={{color: '#FF5A56'}}>약 {data.mortgage/million}억</span> 있습니다.</div>
                 <Seesaw className={styles.detailIcon}/>
                 <div className={styles.detailSubTitleBox}>빚이 조금 있는 편이에요!</div>
-                <p className={styles.detailText}> 
+                <p className={styles.detailText}>
                   이 집을 담보로 빚이 조금 있는 편이라 주의가 필요해요! <br/><br/>
                   현재 등기부등본상 빚이 약 {data.mortgage/million}억 정도 있는데 예상 최소 가격 대비 nn% 정도예요!  <br/><br/>
                 </p>
                 <div className={styles.detailRiskCalculator}>
-                  <div style={{fontSize: '14px', fontWeight: 700}}>위험도 계산식</div>
-                  <span style={{background: 'linear-gradient(to top, #FFCDC9 30%, transparent 50%)', fontSize: '13px', fontWeight: 700}}>
+                  <div style={{fontSize: '0.875em', fontWeight: 700}}>위험도 계산식</div>
+                  <span style={{background: 'linear-gradient(to top, #FFCDC9 30%, transparent 50%)', fontSize: '0.813em', fontWeight: 700}}>
                     보증금 + 빚 〈 <span style={{textDecoration: 'underline'}}>예상거래가격</span> × 0.7
                   </span>
                 </div>
@@ -227,15 +227,15 @@ const ReportContent = (props) => {
                 <div className={styles.detailTitle}>집을 담보로 빚이 <span style={{color: '#FF5A56'}}> 0원</span>이에요!</div>
                 <Seesaw className={styles.detailIcon}/>
                 <div className={styles.detailSubTitleBox}>등기부등본상 빚이 없어요!</div>
-                <p className={styles.detailText}> 
+                <p className={styles.detailText}>
                   현재 등시부등본상 빚이 없는 집이에요! <br/><br/>
                   당장은 빚이 없어 덜 위험해 보일 수 있지만 언제든지 집주인이 이 집을 담보로 대출을 받을 수 있기 때문에 주기적인 등기부등본 확인과 특약조치가 필요해요!<br/><br/>
                 </p>
                 <p className={styles.detailTextGray}>계약 전, 잔금 입금 전, 전입신고 전 이렇게 세 번 확인해 주세요!<br/><br/></p>
                 <p className={styles.detailText}> 외에도 선순위보증금(다른 세입자들 보증금의 합)을 공인중개사나 집주인에게 물어보신 후 계산해 보셔야 보다 정확한 위험도를 알 수 있어요.<br/><br/></p>
                 <div className={styles.detailRiskCalculator}>
-                  <div style={{fontSize: '14px', fontWeight: 700}}>위험도 계산식</div>
-                  <span style={{background: 'linear-gradient(to top, #FFCDC9 30%, transparent 50%)', fontSize: '13px', fontWeight: 700}}>
+                  <div style={{fontSize: '0.875em', fontWeight: 700}}>위험도 계산식</div>
+                  <span style={{background: 'linear-gradient(to top, #FFCDC9 30%, transparent 50%)', fontSize: '0.813em', fontWeight: 700}}>
                     보증금 + 빚 〈 <span style={{textDecoration: 'underline'}}>예상거래가격</span> × 0.7
                   </span>
                 </div>
@@ -335,7 +335,7 @@ const ReportContent = (props) => {
           감사합니다.<br/><br/>
         </p>
       </div>
-      
+
       <div className={styles.detailBox}>
         <div className={styles.summaryTitle}>종합의견</div>
       </div>

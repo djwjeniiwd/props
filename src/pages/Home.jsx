@@ -31,13 +31,13 @@ const Home = () => {
 export default Home;
 
 const Wrapper = styled.div`
-  padding: 20px 32px 163px 32px;
+  padding: 1.250em 2em 10.188em 2.000em;
 `;
 
 const MainCopy = styled.div`
   font-weight: 900;
-  font-size: 30px;
-  line-height: 55px;
+  font-size: 1.875em;
+  line-height: 3.438em;
   color: #4c4c4c;
 `;
 const MainCopyStrong = styled.span`
@@ -45,10 +45,10 @@ const MainCopyStrong = styled.span`
 `;
 const MainIntro = styled.p`
   font-weight: 700;
-  font-size: 17px;
-  line-height: 30px;
+  font-size: 1.063em;
+  line-height: 1.875em;
   color: #636363;
-  margin: 45px 0 54px 0;
+  margin: 2.813em 0 3.375em 0;
 `;
 
 const PopUpWrapper = styled.div`
@@ -57,36 +57,36 @@ const PopUpWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 322px;
-  height: 91px;
+  width: 20.125em;
+  height: 5.688em;
   position: fixed;
   top: 77vh;
 `;
 const FreeBetaWrapper = styled.div`
   background: rgba(0, 0, 0, 0.61);
-  width: 201px;
-  height: 35px;
-  border-radius: 9px;
+  width: 12.563em;
+  height: 2.188em;
+  border-radius: 0.563em;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  font-size: 13.4px;
-  line-height: 20px;
+  font-size: 0.838em;
+  line-height: 1.250em;
 `;
 const FreeBetaStrong = styled.span`
   color: #ffde30;
-  margin-left: 3.5px;
+  margin-left: 0.219em;
 `;
 const TriggerBtn = styled.button`
   text-decoration: none;
   background-color: #5087ff;
   border: none;
-  border-radius: 13px;
-  width: 322px;
-  height: 48px;
+  border-radius: 0.813em;
+  width: 20.125em;
+  height: 3.000em;
   color: white;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 35px;
+  font-size: 1.063em;
+  line-height: 2.188em;
 `;
