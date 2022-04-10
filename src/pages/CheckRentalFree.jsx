@@ -208,6 +208,10 @@ const CheckRentalFree = props => {
           }}
         />
         <Checkbox text='잘 모르겠어요!'/>
+        <div className={styles.periodText}>
+          대략적인 기간이라도 입력해주시면 
+          보다 정확한 결과에 도움이 됩니다 :)
+        </div>
         <Link to='/checkRentalFree' style={{ textDecoration:'none'}}>
         <button type='button' className='btn btn-outline-secondary'
             style={{
