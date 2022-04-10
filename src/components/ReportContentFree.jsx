@@ -147,7 +147,7 @@ const ReportContent = (props) => {
         </p>
       </div>
       <div className={styles.detailBox}>
-        <div className={styles.detailTitle} style={{fontSize: '20px'}}>우리 집 등기부등본 발급 받고<br/>부동산 전문가의 분석 받기</div>
+        <div className={styles.detailTitle} style={{fontSize: '1.250em'}}>우리 집 등기부등본 발급 받고<br/>부동산 전문가의 분석 받기</div>
         <div className={styles.summaryMents} style={{
           marginTop: '20px',
           fontSize: '12px'
