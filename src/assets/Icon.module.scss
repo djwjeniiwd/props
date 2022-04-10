@@ -35,15 +35,15 @@
   color: gray;
   font-size: 0.9em;
   text-align: left;
-  border-radius: 20px;
+  border-radius: 1.250em;
   border: 0;
-  box-shadow: 0px 0px 0.9em lightgray;
+  box-shadow: 0em 0em 0.9em lightgray;
 }
 
 .bsSearch {
   position: absolute;
-  right: 15px;
-  bottom: 14px;
+  right: 0.938em;
+  bottom: 0.875em;
 }
 
 .searchDiv {
@@ -51,21 +51,21 @@
 }
 
 .searchH2 {
-  margin-left: 37px;
-  margin-top: 30px;
+  margin-left: 2.313em;
+  margin-top: 1.875em;
   font-size: 1.2em;
   font-weight: 600;
 }
 
 .searchH3 {
-  margin-left: 37px;
-  margin-top: 15px;
+  margin-left: 2.313em;
+  margin-top: 0.938em;
   font-weight: 600;
 }
 
 .searchEx {
   margin-left: 3.2em;
-  margin-top: 15px;
+  margin-top: 0.938;
   font-size: 0.9em;
   font-weight: 600;
 }
@@ -74,39 +74,39 @@
   clear: both;
   width: 100%;
   text-align: center;
-  padding: 18px;
-  border-top: 1.8px solid lightgray;
+  padding: 1.125em;
+  border-top: 0.113em solid lightgray;
   font-weight: 600;
 }
 
 .searchBox {
   padding: 0;
-  margin: 10px;
-  height: 380px;
+  margin: 0.625em;
+  height: 23.750em;
   overflow: auto;
-  border: 1px solid lightgray;
+  border: 0.063em solid lightgray;
   border-collapse: collapse;
 }
 
 .searchBlock {
-  border-top: 1px solid #C0C0C0;
-  border-bottom: 1px solid #C0C0C0;
+  border-top: 0.063em solid #C0C0C0;
+  border-bottom: 0.063em solid #C0C0C0;
   border-collapse: collapse;
-  padding: 15px 0;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: -1px;
+  padding: 0.938em 0;
+  padding-left: 0.938em;
+  padding-right: 0.938em;
+  margin-top: -0.063em;
   font-size: 0.75em;
   font-weight: 500;
   line-height: 180%;
 }
 .clicked {
-  border-top: 1px solid #C0C0C0;
+  border-top: 0.063em solid #C0C0C0;
   border-collapse: collapse;
-  padding: 15px 0;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: -1px;
+  padding: 0.938em 0;
+  padding-left: 0.938em;
+  padding-right: 0.938em;
+  margin-top: -0.063em;
   font-size: 0.75em;
   font-weight: 500;
   line-height: 180%;
@@ -133,28 +133,28 @@
   width: 85%;
   height: 2.8em;
   margin: 0.7em;
-  padding-left: 15px;
+  padding-left: 0.938em;
   background-color: transparent;
   font-size: 0.9em;
   font-weight: 600;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 1.25em;
   border: 0;
-  box-shadow: 0px 0px 10px lightgray;
+  box-shadow: 0em 0em 0.625em lightgray;
 }
 
 .clickedRentalType {
   width: 85%;
   height: 2.8em;
   margin: 0.7em;
-  padding-left: 15px;
+  padding-left: 0.938em;
   background-color: transparent;
   font-size: 0.9em;
   font-weight: 600;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 1.25em;
   border: 0;
-  box-shadow: 0px 0px 10px lightgray;
+  box-shadow: 0em 0em 0.625em lightgray;
   background-color: #1381ff;
   color: white;
 }
@@ -163,21 +163,21 @@
   position: relative;
   width: 85%;
   height: 2.8em;
-  margin-top: 175px;
-  padding-left: 15px;
-  padding-right: 50px;
+  margin-top: 10.938em;
+  padding-left: 0.938em;
+  padding-right: 3.125em;
   background-color: transparent;
   color: black;
   font-size: 0.9em;
   font-weight: 500;
   text-align: left;
-  border-radius: 20px;
+  border-radius: 1.25em;
   border: 0;
-  box-shadow: 0px 0px 10px lightgray;
+  box-shadow: 0em 0em 0.625em lightgray;
 }
 
 .tips {
-  font-size: 10px;
+  font-size: 0.625em;
   -webkit-transform: scale(0.95);
   font-weight: 500;
   color: black;
@@ -199,13 +199,13 @@
 
 .box {
   width: 82%;
-  height: 385px;
+  height: 24.063em;
   margin: 0 auto;
   padding-top: 2.5em;
   padding-left: 0.8em;
   padding-right: 2em;
-  box-shadow: 0px 0px 7px lightgray;
-  border-radius: 15px;
+  box-shadow: 0em 0em 0.438em lightgray;
+  border-radius: 0.938em;
   text-align: left;
   background-color: white;
 }
@@ -214,7 +214,7 @@
   border: none;
   background-color: #D1D1D1;
   color: white;
-  border-radius: 45px;
+  border-radius: 2.813em;
   font-weight: 600;
 }
 
@@ -234,7 +234,7 @@
 .reportTabSafe > li {
   display: inline-block;
   text-align: center;
-  width: 156px;
+  width: 9.750em;
   border-bottom: solid #BDBDBD;
   color: #BDBDBD;
   font-weight: 600;
@@ -242,7 +242,7 @@
 .reportTabCaution > li {
   display: inline-block;
   text-align: center;
-  width: 156px;
+  width: 9.750em;
   border-bottom: solid #BDBDBD;
   color: #BDBDBD;
   font-weight: 600;
@@ -250,7 +250,7 @@
 .reportTabDanger > li {
   display: inline-block;
   text-align: center;
-  width: 156px;
+  width: 9.750em;
   border-bottom: solid #BDBDBD;
   color: #BDBDBD;
   font-weight: 600;
@@ -258,7 +258,7 @@
 .reportTabFree > li {
   display: inline-block;
   text-align: center;
-  width: 156px;
+  width: 9.750em;
   border-bottom: solid #BDBDBD;
   color: #BDBDBD;
   font-weight: 600;
@@ -303,44 +303,44 @@
 }
 
 .summaryBox {
-  border-radius: 20px;
-  box-shadow: 0px 4px 16px 1px rgba(0, 0, 0, 0.1);
-  width: 311px;
+  border-radius: 1.25em;
+  box-shadow: 0em 0.25em 1em 0.063em rgba(0, 0, 0, 0.1);
+  width: 19.438em;
   margin: 0 auto;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 1.375em;
+  padding-bottom: 1.375em;
   background-color: white;
-  margin-bottom: 35px;
+  margin-bottom: 2.188em;
 }
 .summaryTitle {
-  font-size: 18.55px;
+  font-size: 1.159em;
   font-weight: 700;
   text-align: left;
-  padding-left: 22px;
+  padding-left: 1.375em;
 }
 .summaryBang {
   float: left;
-  margin-left: 13px;
-  margin-right: 13px;
+  margin-left: 0.813em;
+  margin-right: 0.813em;
 }
 .summaryDiv {
-  font-size: 15px;
+  font-size: 0.938em;
   font-weight: 700;
   text-align: left;
 }
 .summarySpan {
   color: #F98C84;
-  font-size: 11.5px;
+  font-size: 0.719em;
   font-weight: 600;
   text-align: left;
 }
 .summaryDetails {
-  border-radius: 20px;
-  box-shadow: 0px 4px 16px 1px rgba(0, 0, 0, 0.1);
-  width: 213px;
-  height: 41px;
+  border-radius: 1.25em;
+  box-shadow: 0em 0.25em 1em 0.063em rgba(0, 0, 0, 0.1);
+  width: 13.313em;
+  height: 2.563em;
   margin: 0 auto;
-  font-size: 15px;
+  font-size: 0.938em;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -348,125 +348,125 @@
 }
 .summaryMents {
   color: #767676;
-  font-size: 10px;
+  font-size: 0.625em;
   font-weight: 500;
   text-align: center;
-  margin-left: 28.5px;
-  margin-right: 28.5px;
-  height: 60px;
+  margin-left: 1.781em;
+  margin-right: 1.781em;
+  height: 3.75em;
   word-break: keep-all;
 }
 .summaryBlock {
-  height: 10px;
+  height: 0.625em;
 }
 .summaryNext {
-  margin-left: 20px;
-  padding-bottom: 2px;
+  margin-left: 1.25em;
+  padding-bottom: 0.125em;
 }
 .summaryText {
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 500;
   text-align: left;
-  margin-left: 22px;
-  margin-right: 22px;
+  margin-left: 1.375em;
+  margin-right: 1.375em;
 }
 .summarySubTitle {
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: 500;
   color: #BDBDBD;
   text-align: left;
-  margin-left: 17px;
+  margin-left: 1.063em;
 }
 
 .detailBox {
-  border-radius: 20px;
-  box-shadow: 0px 4px 16px 1px rgba(0, 0, 0, 0.1);
-  width: 343px;
+  border-radius: 1.25em;
+  box-shadow: 0em 0.25em 1em 0.063em rgba(0, 0, 0, 0.1);
+  width: 21.438em;
   margin: 0 auto;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 1.375em;
+  padding-bottom: 1.375em;
   background-color: white;
-  margin-bottom: 35px;
+  margin-bottom: 2.188em;
 }
 
 .detailBox2 {
-  border-radius: 20px;
-  box-shadow: 0px 4px 16px 1px rgba(0, 0, 0, 0.1);
-  width: 343px;
+  border-radius: 1.25em;
+  box-shadow: 0em 0.25em 1em 0.063em rgba(0, 0, 0, 0.1);
+  width: 21.438em;
   margin: 0 auto;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 1.375em;
+  padding-bottom: 1.375em;
   background-color: white;
-  margin-bottom: 35px;
+  margin-bottom: 2.188em;
 }
 
 .detailTitle {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 700;
-  margin-top: 30px;
+  margin-top: 1.875em;
 }
 .detailIcon {
-  margin-top: 40px;
+  margin-top: 2.5em;
 }
 .detailSubTitleBox {
   background-color: #FFF8F8;
-  border: 2px solid #FFD7D6;
-  border-radius: 20px;
-  width: 305px;
-  height: 37px;
+  border: 0.125em solid #FFD7D6;
+  border-radius: 1.250em;
+  width: 19.063em;
+  height: 2.313em;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+  font-size: 0.938em;
   font-weight: 700;
   color: #3E3E3E;
-  margin-top: 35px;
-  margin-bottom: 25px;
+  margin-top: 2.188em;
+  margin-bottom: 1.563em;
 }
 .detailSubTitleBox2 {
   background-color: #FFF8F8;
-  border: 2px solid #FFD7D6;
-  border-radius: 20px;
-  width: 305px;
-  height: 37px;
+  border: 0.125em solid #FFD7D6;
+  border-radius: 1.250em;
+  width: 19.063em;
+  height: 2.313em;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+  font-size: 0.938em;
   font-weight: 700;
   color: #3E3E3E;
-  margin-bottom: 25px;
+  margin-bottom: 1.563em;
 }
 .detailText {
-  width: 298px;
-  line-height: 24px;
-  font-size: 14px;
+  width: 18.625em;
+  line-height: 1.500em;
+  font-size: 0.875em;
   color: #3E3E3E;
   font-weight: 500;
   text-align: justify;
   margin: 0 auto;
 }
 .detailTextGray {
-  width: 298px;
-  line-height: 24px;
-  font-size: 14px;
+  width: 18.625em;
+  line-height: 1.500em;
+  font-size: 0.875em;
   color: #767676;
   font-weight: 500;
   text-align: justify;
   margin: 0 auto;
 }
 .detailRiskCalculator {
-  width: 299px;
-  height: 85px;
-  border: 2px solid rgba(170, 170, 170, 0.3);
-  border-radius: 15px;
-  padding-top: 14px;
-  padding-bottom: 23px;
+  width: 18.688em;
+  height: 5.313em;
+  border: 0.125em solid rgba(170, 170, 170, 0.3);
+  border-radius: 0.938em;
+  padding-top: 0.875em;
+  padding-bottom: 1.438em;
   margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 1.563em;
+  margin-bottom: 1.563em;
 }
 
 .safeBackground {
@@ -493,19 +493,19 @@
   height: 100%;
   width: 100%;
   position: relative;
-  margin-top: -35px;
+  margin-top: -2.188em;
 }
 .cautionBackgroundFull {
   background: rgba(255, 247, 233, 0.47);
   height: 100%;
   width: 100%;
   position: relative;
-  margin-top: -35px;
+  margin-top: -2.188em;
 }
 .dangerBackgroundFull {
   background:rgba(255, 232, 232, 0.47);
   height: 100%;
   width: 100%;
   position: relative;
-  margin-top: -35px;
+  margin-top: -2.188em;
 }
