@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 import Modal from 'react-modal'
-
+import Checkbox from '../components/CheckBox'
 import Layout from '../components/Layout'
 import styles from '../assets/Icon.module.scss'
 import { ReactComponent as ServicePreparing } from '../assets/servicePreparing.svg'
@@ -13,9 +13,11 @@ const CheckRentalFree = props => {
   const [ questionNumber, setQuestionNumber ] = useState(0)
   const [ guarantee, setGuarantee ] = useState()
   const [ num, setNum ] = useState('')
+  const [ Period, setPeriod ] = useState('')
   const [ trans, setTrans ] = useState({
     transAmount: "0",
-    transType: "전세"
+    transType: "전세",
+    transPeriod: "0",
   })
 
   const [ address, setAddress ] = useState()
@@ -33,6 +35,10 @@ const CheckRentalFree = props => {
   const question = [
     {
       '0': '거래 형태가',
+      '1': '어떻게 되시나요?'
+    },
+    {
+      '0': '계약 기간은',
       '1': '어떻게 되시나요?'
     },
     {
@@ -113,19 +119,16 @@ const CheckRentalFree = props => {
     }
   }
 
+  const uncomma = (str) => {
+    str = String(str);
+    const resstr = str.replace(/[^\d]+/g, '');
+    return resstr;
+  }
+
   const inputPriceFormat = (str) => {
     const comma = (str) => {
       str = String(str)
       return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,')
-    }
-    const uncomma = (str) => {
-      str = String(str)
-      const resstr = str.replace(/[^\d]+/g, '')
-      setTrans({
-        ...trans,
-        transAmount: (resstr === '') ? '0' : resstr
-      }) 
-      return resstr
     }
     return comma(uncomma(str))
   }
@@ -189,14 +192,75 @@ const CheckRentalFree = props => {
       </>
       }
 
-      {(questionNumber === 1 && !(clickedIndex === 3)) && // 전세 or 월세 클릭 후 다음 버튼을 눌렀을 때, 2번째 질문 페이지
+      {(questionNumber === 1 && !(clickedIndex === 3)) &&  // 계약 기간 + 이전, 다음 2번째 질문 페이지
+      <>
+        <input className={styles.inputPeriod}
+          id='PeriodInput'
+          type='text' 
+          value={Period}
+          placeholder='계약기간을 입력해주세요 (개월)' 
+          onChange={(e) => {
+            setPeriod(inputPriceFormat(e.target.value))
+            setTrans({
+            ...trans,
+            transPeriod: e.target.value
+            })
+          }}
+        />
+        <Checkbox text='잘 모르겠어요!'/>
+        <div className={styles.periodText}>
+          대략적인 기간이라도 입력해주시면 
+          보다 정확한 결과에 도움이 됩니다 :)
+        </div>
+        <Link to='/checkRentalFree' style={{ textDecoration:'none'}}>
+        <button type='button' className='btn btn-outline-secondary'
+            style={{
+              margin: 'auto',
+              marginLeft: '7.5%',
+              marginTop: '3em',
+              float: 'left',
+              display: 'block',
+              width: '35%',
+              fontWeight: '600',
+              border: '1px solid lightgray',
+              borderRadius: '20px'
+            }}
+            onClick={() => nextClicked(0)}
+          >이전</button>
+        </Link>
+        <Link to='/checkRentalFree' style={{ textDecoration:'none'}}>
+          <button type='button' className='btn btn-outline-secondary'
+            style={{
+              margin: 'auto',
+              marginRight: '7.5%',
+              marginTop: '3em',
+              float: 'right',
+              display: 'block',
+              width: '35%',
+              fontWeight: '600',
+              border: '1px solid lightgray',
+              borderRadius: '20px'
+            }}
+            onClick={() => nextClicked(2)}
+          >다음</button>
+        </Link>
+      </>
+      } 
+
+      {questionNumber === 2 && // 전세 or 월세 클릭 후 다음 버튼을 눌렀을 때, 2번째 질문 페이지
         <>
           <input className={styles.inputGuarantee}
             id='guaranteeInput'
             type='text' 
             placeholder='보증금액을 입력해주세요 (숫자)' 
             value={num}
-            onChange={(e) => setNum(inputPriceFormat(e.target.value))}
+            onChange={(e) => {
+              setNum(inputPriceFormat(e.target.value))
+              setTrans({
+                ...trans,
+                transAmount: uncomma(e.target.value)
+              }) 
+            }}
           />
           <Link to={'/reportFree'}
               state={{ address: address, trans: trans}}

@@ -31,32 +31,63 @@ const ReportFree = () => {
   useEffect(() => {
     setAddress(props.state.address)
     setTrans(props.state.trans)
+    console.log(props.state);
     const getSimple = async () => {
-      await axios
-      .post(
-        `${String(
-          process.env.REACT_APP_API_URL
-        )}/api/v1/analyze/simple`, {
-          'complexType': props.state.address.complexType,
-          'detailAddress': props.state.address.detailAddress,
-          'landCode': props.state.address.landCode,
-          'uniqueNo': props.state.address.uniqueNo,
-          'transAmount': props.state.trans.transAmount,
-          'transType': props.state.trans.transType
-        }, {
-          headers: {
-            'Authorization' : `Bearer ${getCookie('access_token')}`
+      if (props.state.trans.transPeriod) {
+        await axios
+        .post(
+          `${String(
+            process.env.REACT_APP_API_URL
+          )}/api/v1/analyze/simple`, {
+            'complexType': props.state.address.complexType,
+            'detailAddress': props.state.address.detailAddress,
+            'landCode': props.state.address.landCode,
+            'uniqueNo': props.state.address.uniqueNo,
+            'transAmount': props.state.trans.transAmount,
+            'transType': props.state.trans.transType,
+            'transPeriod': props.state.trans.transPeriod
+          }, {
+            headers: {
+              'Authorization' : `Bearer ${getCookie('access_token')}`
+            }
           }
-        }
-      )
-      .then((res) => {
-        setSimpleData(res.data)
-        console.log(res.data)
-      })
-      .catch((err) => {
-        console.log("err: ", err);
-        window.alert("정보를 불러오던 중 오류가 발생했습니다.");
-      });
+        )
+        .then((res) => {
+          setSimpleData(res.data)
+          console.log(res.data)
+        })
+        .catch((err) => {
+          console.log("err: ", err);
+          window.alert("정보를 불러오던 중 오류가 발생했습니다.");
+        });
+      }
+      else {
+        await axios
+        .post(
+          `${String(
+            process.env.REACT_APP_API_URL
+          )}/api/v1/analyze/simple`, {
+            'complexType': props.state.address.complexType,
+            'detailAddress': props.state.address.detailAddress,
+            'landCode': props.state.address.landCode,
+            'uniqueNo': props.state.address.uniqueNo,
+            'transAmount': props.state.trans.transAmount,
+            'transType': props.state.trans.transType
+          }, {
+            headers: {
+              'Authorization' : `Bearer ${getCookie('access_token')}`
+            }
+          }
+        )
+        .then((res) => {
+          setSimpleData(res.data)
+          console.log(res.data)
+        })
+        .catch((err) => {
+          console.log("err: ", err);
+          window.alert("정보를 불러오던 중 오류가 발생했습니다.");
+        });
+      }
     }
     getSimple()
   }, [props])
