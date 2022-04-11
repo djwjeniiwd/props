@@ -137,7 +137,7 @@ const ReportContent = (props) => {
           부동산을 통해 계약을 진행했어도 나중에 보증금을 돌려받는데 문제가 생기면 그 책임을 공인중개사에게 온전히 묻기는 어려워요!<br/><br/>
           실제로 보증금 사고가 났을 때 등기부등본과 같은 서류들을 직접 제대로 보지 않은 세입자에게 책임이 있다는 대법원의 판결이 있습니다.<br/><br/>
           따라서 계약 전 등기부등본과 건축물대장을 꼼꼼히 살펴보신 후 신중히 결정하시길 권고 드립니다!<br/><br/>
-          혹시 등기부등본, 건축물대장 서류를 보는게 어려우시다면 하단의 부동산 전문가 서비스를 통해 빠르게 분석 받아 보세요!<br/>
+          혹시 등기부등본, 건축물대장 서류를 보는게 어려우시다면 하단의 부동산 전문가 서비스를 통해 빠르게 분석 받아 보세요!<br/><br/>
         </p>
       </div>
       <div className={styles.detailBox}>
@@ -146,14 +146,14 @@ const ReportContent = (props) => {
           1. 계약 전 등기부등본, 건축물대장 확인은 직접 하셔야 안전합니다.<br/><br/>
           2. 집 시설물 점검 시 조금이라도 파손된 부분이나 이상이 있는 부분은 이사 전에 꼭 임대인에게 말하고 수리가 필요한 부분은 특약사항에 기재해야 해요!<br/><br/>
           3. 이사 당일 전입신고, 확정일자 발급을 반드시 받으셔야 합니다.<br/><br/>
-          4. 보증금이 잘못되었을 때 부동산이 책임져야 한다는 법은 없습니다! 내 계약인 만큼 내가 꼼꼼하게 확인해야 해요!<br/>
+          4. 보증금이 잘못되었을 때 부동산이 책임져야 한다는 법은 없습니다! 내 계약인 만큼 내가 꼼꼼하게 확인해야 해요!<br/><br/>
         </p>
       </div>
       <div className={styles.detailBox}>
-        <div className={styles.detailTitle} style={{fontSize: '1.250em'}}>우리 집 등기부등본 발급 받고<br/>부동산 전문가의 분석 받기</div>
+        <div className={styles.detailTitle} style={{fontSize: '1.4em'}}>우리 집 등기부등본 발급 받고<br/>부동산 전문가의 분석 받기</div>
         <div className={styles.summaryMents} style={{
-          marginTop: '1.250em',
-          fontSize: '0.750em'
+          marginTop: '1.4em',
+          fontSize: '0.9em'
           }}>등기부등본과 건축물대장을 바탕으로<br/>약 52가지 위험사항을 점검해요!</div>
         <Mini className={styles.detailIcon}/>
         <Hand className={styles.detailIcon}/>
@@ -161,6 +161,7 @@ const ReportContent = (props) => {
         style={{
           margin: 'auto',
           marginTop: '2em',
+          marginBottom: '0.5em',
           display: 'block',
           width: '85%',
           fontWeight: '600',
