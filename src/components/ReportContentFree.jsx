@@ -7,6 +7,9 @@ import { ReactComponent as Money } from '../assets/reportMoneyYellow.svg'
 import { ReactComponent as Building } from '../assets/reportBuliding.svg'
 import { ReactComponent as Hand } from '../assets/reportHand.svg'
 import { ReactComponent as Mini } from '../assets/reportMini.svg'
+import { ReactComponent as Fmoney } from '../assets/FlyingMoney.svg'
+import { ReactComponent as ShareK } from '../assets/ShareKakao.svg'
+import { ReactComponent as ShareL } from '../assets/Sharelink.svg'
 const ReportContent = (props) => {
   const [data, setData] = useState({
     joint: false,
@@ -41,7 +44,7 @@ const ReportContent = (props) => {
 
   return (
     <div>
-      <div style={{height: '35px'}}></div>
+      <div style={{height: '2.188em'}}></div>
       <div className={styles.detailBox}>
         <div className={styles.summaryTitle}>주요 핵심 리포트</div>
         {simpledata &&
@@ -169,6 +172,12 @@ const ReportContent = (props) => {
         }}
         onClick={() => kakaoChannelButtonClicked()}
         >카톡으로 리포트 파일 받기</button>
+      </div>
+      <div className={styles.detailBox}>
+        <div className={styles.summaryTitle}>공유하고 내 친구 보증금도<br/>안전하게 지켜주기</div>
+        <Fmoney className={styles.detailIcon}/>
+        <ShareK className={styles.shareIcon1}/>
+        <ShareL className={styles.shareIcon2}/>
       </div>
       <div className={styles.summaryMents}>저희 서비스는 법률 자문을 포함하지 않습니다.<br/><br/>
         권리의 득실·변경이나 충돌 여부, 우열관계 등의 분석을 제공하고 있지 않기 때문에 복잡한 권리 관계가 얽힌 경우 ‘일반 법률사무’를 제공하는 전문가(변호사)에게 조언을 구해야 합니다.<br/><br/>
